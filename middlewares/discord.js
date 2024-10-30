@@ -1,6 +1,7 @@
 const passport = require('passport');
 const DiscordStrategy = require('passport-discord').Strategy;
-const User = require('../model.js/user');
+const User = require('../model.js/user'); 
+const dotenv = require('dotenv').config();
 
 passport.use(new DiscordStrategy({
     clientID: process.env.DISCORD_CLIENT_ID,
@@ -12,7 +13,11 @@ passport.use(new DiscordStrategy({
         try {
             let user = await User.findOne({ discordId: profile.id });
             if (!user) {
-                user = await User.create({ discordId: profile.id, username: profile.username, email: profile.email });
+                user = await User.create({
+                    discordId: profile.id,
+                    username: profile.username,
+                    email: profile.email
+                });
             }
             return done(null, user);
         } catch (error) {
