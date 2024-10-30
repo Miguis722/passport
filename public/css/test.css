@@ -8,6 +8,116 @@
     color: #000;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+.button_google {
+    display: flex;
+    width: 233px;
+    height: 46px;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgb(65, 63, 63);
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button_google svg {
+    height: 24px;
+}
+
+.button_google:hover {
+    transform: scale(1.02);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button_facebook {
+    display: flex;
+    background-color: #039be5;
+    background-image: linear-gradient(to top right, #0163E0, #18ACFE);
+    color: #ffffff;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: .6s ease;
+    text-decoration: none;
+}
+
+.button_facebook p {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #ffffff;
+}
+
+.button_facebook svg {
+    height: 30px;
+}
+
+.button_facebook:hover {
+    box-shadow: none;
+}
+
+.div_button_discord p {
+    color: #ffffff;
+}
+
+.button {
+    display: flex;
+    background-color: #0A66C2;
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: .6s ease;
+}
+
+.button svg {
+    height: 30px;
+}
+
+.button:hover {
+    box-shadow: none;
+}
 
 main {
     display: flex;
