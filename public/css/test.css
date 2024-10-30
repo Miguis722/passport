@@ -1,0 +1,54 @@
+@import url(variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter_18pt-Regular";
+    color: #000;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 20px;
+    margin-bottom: 50px;
+}
+
+.section__social {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.section__social button {
+    margin-bottom: 22px;
+    border: none;
+    outline: none;
+    /* background: red; */
+    border-radius: 10px;
+    width: 200px;
+    height: 56px;
+    font-family: "Inter_18pt-SemiBold";
+    font-size: 16px;
+}
+
+.section__social button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #D8DADC;
+    height: 56px;
+    background: #fff;
+}
+
+.section__social button:hover {
+    filter: invert(1);
+    cursor: pointer;
+    transition: filter 0.9s ease;
+}
